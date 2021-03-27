@@ -1,7 +1,10 @@
 package com.company.equals.workingexample;
 
+import java.util.Comparator;
+import java.util.Objects;
+
 // Class with a typical equals method
-public final class PhoneNumber {
+public final class PhoneNumber implements Comparable<PhoneNumber> {
 
         private final short areaCode, prefix, lineNum;
 
@@ -26,5 +29,31 @@ public final class PhoneNumber {
             return pn.lineNum == lineNum && pn.prefix == prefix
                     && pn.areaCode == areaCode;
         }
-      // Remainder omitted
+
+    @Override
+    public int hashCode() {
+        int result = Short.hashCode(areaCode);
+        result += 31 * result + Short.hashCode(prefix);
+        result += 31 * result + Short.hashCode(lineNum);
+        return result;
+    }
+
+    @Override
+    public int compareTo(PhoneNumber phoneNumber) {
+        int result;
+        result = Short.compare(this.areaCode, phoneNumber.areaCode);
+        if(result == 0) {
+            result = Short.compare(this.prefix, phoneNumber.prefix);
+            if(result == 0) {
+                result = Short.compare(this.lineNum, phoneNumber.lineNum);
+            }
+        }
+        return result;
+    }
+    // One-line hashCode method - mediocre performance
+    /*    @Override public int hashCode() {
+        return Objects.hash(lineNum, prefix, areaCode);
+    }*/
+
+    // Remainder omitted
 }
