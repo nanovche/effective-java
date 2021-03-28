@@ -1,6 +1,4 @@
-package com.company.equals.symmetry;
-
-import com.company.equals.symmetry.CaseInsensitiveString;
+package objectmethods.symmetry;
 
 import java.util.ArrayList;
 import java.util.List;

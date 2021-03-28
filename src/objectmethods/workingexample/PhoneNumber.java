@@ -1,7 +1,4 @@
-package com.company.equals.workingexample;
-
-import java.util.Comparator;
-import java.util.Objects;
+package objectmethods.workingexample;
 
 // Class with a typical equals method
 public final class PhoneNumber implements Comparable<PhoneNumber> {

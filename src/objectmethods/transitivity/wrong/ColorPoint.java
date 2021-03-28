@@ -1,10 +1,10 @@
-package com.company.equals.transitivity.wrong;
+package objectmethods.transitivity.wrong;
 
-import com.company.equals.transitivity.Point;
+import objectmethods.transitivity.Point;
 
 import java.awt.*;
 
-public class ColorPoint extends com.company.equals.transitivity.Point {
+public class ColorPoint extends objectmethods.transitivity.Point {
 
     private final Color color;
     public ColorPoint(int x, int y, Color color) {

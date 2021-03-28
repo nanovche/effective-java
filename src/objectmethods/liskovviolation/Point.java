@@ -1,4 +1,4 @@
-package com.company.equals.liskovviolation;
+package objectmethods.liskovviolation;
 
 import java.util.Set;
 
@@ -12,11 +12,11 @@ public class Point {
         this.y = y;
     }
 
-    private static final Set<com.company.equals.liskovviolation.Point> unitCircle = Set.of(
-            new com.company.equals.liskovviolation.Point( 1, 0), new com.company.equals.liskovviolation.Point( 0, 1),
-            new com.company.equals.liskovviolation.Point(-1, 0), new com.company.equals.liskovviolation.Point( 0, -1));
+    private static final Set<Point> unitCircle = Set.of(
+            new Point( 1, 0), new Point( 0, 1),
+            new Point(-1, 0), new Point( 0, -1));
 
-    public static boolean onUnitCircle(com.company.equals.liskovviolation.Point p) {
+    public static boolean onUnitCircle(Point p) {
         return unitCircle.contains(p);
     }
 

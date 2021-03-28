@@ -1,4 +1,4 @@
-package com.company.equals.transitivity.right;
+package objectmethods.transitivity.right;
 
 import java.awt.*;
 import java.util.Objects;

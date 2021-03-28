@@ -1,6 +1,4 @@
-package com.company.equals.transitivity;
-
-import java.util.Set;
+package objectmethods.transitivity;
 
 //transitivity
 public class Point {

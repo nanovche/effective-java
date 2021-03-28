@@ -1,4 +1,4 @@
-package com.company.equals.liskovviolation;
+package objectmethods.liskovviolation;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

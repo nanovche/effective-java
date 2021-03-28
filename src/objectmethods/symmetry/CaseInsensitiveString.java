@@ -1,4 +1,4 @@
-package com.company.equals.symmetry;
+package objectmethods.symmetry;
 
 import java.util.Objects;
 

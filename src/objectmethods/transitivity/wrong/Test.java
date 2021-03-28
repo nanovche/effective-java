@@ -1,8 +1,6 @@
-package com.company.equals.transitivity.wrong;
+package objectmethods.transitivity.wrong;
 
-import com.company.equals.transitivity.Point;
-import com.company.equals.transitivity.wrong.ClickablePoint;
-import com.company.equals.transitivity.wrong.ColorPoint;
+import objectmethods.transitivity.Point;
 
 import java.awt.*;
 
@@ -10,7 +8,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        com.company.equals.transitivity.Point p = new com.company.equals.transitivity.Point(1, 2);
+        objectmethods.transitivity.Point p = new objectmethods.transitivity.Point(1, 2);
         ColorPoint cp = new ColorPoint(1, 2, Color.RED);
 
         //violation of symmetry
@@ -19,7 +17,7 @@ public class Test {
 
         //violation of transitivity
         ColorPoint p1 = new ColorPoint(1, 2, Color.RED);
-        com.company.equals.transitivity.Point p2 = new Point(1, 2);
+        objectmethods.transitivity.Point p2 = new Point(1, 2);
         ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);
 
         //symmetry works

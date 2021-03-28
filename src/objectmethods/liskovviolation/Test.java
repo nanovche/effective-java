@@ -1,6 +1,4 @@
-package com.company.equals.liskovviolation;
-
-import java.net.URL;
+package objectmethods.liskovviolation;
 
 public class Test {
 

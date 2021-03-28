@@ -1,6 +1,6 @@
-package com.company.equals.transitivity.wrong;
+package objectmethods.transitivity.wrong;
 
-import com.company.equals.transitivity.Point;
+import objectmethods.transitivity.Point;
 
 public class ClickablePoint extends Point {
 
