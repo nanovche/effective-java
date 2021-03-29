@@ -1,4 +1,4 @@
-package creatinganddestroyingobjects;
+package creatinganddestroyingobjects.singleton;
 
 public class SingletonExample {
 
